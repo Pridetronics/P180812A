@@ -142,7 +142,7 @@ public class Robot extends SampleRobot {
       m_robotDrive.arcadeDrive(-m_stick.getY(), m_stick.getX());
 
       // The motors will be updated every 5ms
-      Timer.delay(0.005);
+      Timer.delay(0.020);
     }
   }
 
