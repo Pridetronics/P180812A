@@ -15,6 +15,8 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+import com.ctre.phoenix.motorcontrol.can.*;
+
 /**
  * This is a demo program showing the use of the RobotDrive class. The
  * SampleRobot class is the base of a robot application that will automatically
@@ -33,13 +35,21 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * Command-Based instead if you're new.
  */
 public class Robot extends SampleRobot {
+
+  // CAN Address Map
+
+  // Drivetrain
+  private final DifferentialDrive m_robotDrive
+    = new DifferentialDrive(new WPI_TalonSRX(0), new WPI_TalonSRX(1));
+  
+  // Joystick
+  private final Joystick m_stick = new Joystick(0);
+  
+  //Autonomous chooser
+  private final SendableChooser<String> m_chooser = new SendableChooser<>();
   private static final String kDefaultAuto = "Default";
   private static final String kCustomAuto = "My Auto";
 
-  private final DifferentialDrive m_robotDrive
-      = new DifferentialDrive(new Spark(0), new Spark(1));
-  private final Joystick m_stick = new Joystick(0);
-  private final SendableChooser<String> m_chooser = new SendableChooser<>();
 
   public Robot() {
     m_robotDrive.setExpiration(0.1);
@@ -59,11 +69,11 @@ public class Robot extends SampleRobot {
    * LabVIEW Dashboard, remove all of the chooser code and uncomment the
    * getString line to get the auto name from the text box below the Gyro
    *
-   * <p>You can add additional auto modes by adding additional comparisons to
+   * You can add additional auto modes by adding additional comparisons to
    * the if-else structure below with additional strings. If using the
    * SendableChooser make sure to add them to the chooser code above as well.
    *
-   * <p>If you wanted to run a similar autonomous mode with an IterativeRobot
+   * If you wanted to run a similar autonomous mode with an IterativeRobot
    * you would write:
    *
    * <blockquote><pre>{@code
