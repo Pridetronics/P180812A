@@ -1,0 +1,186 @@
+Looking for git in: /usr/bin/git
+Using git 2.10.1 (Apple Git-78) from /usr/bin/git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /Users/Tim/FIRST Robotics/FRC 2018 VSC/P180812a
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git pull --tags
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git show :src/main/java/frc/robot/Robot.java
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git pull --tags origin master
+From https://github.com/Pridetronics/P180812A
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git check-ignore -z --stdin
+> git show :src/main/java/frc/robot/Robot.java
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git push origin master:master
+Missing or invalid credentials.
+Error in request
+remote: Anonymous access to Pridetronics/P180812A.git denied.
+fatal: Authentication failed for 'https://github.com/Pridetronics/P180812A.git/'
+> git push origin master:master
+To https://github.com/Pridetronics/P180812A.git
+   1027c28..72b6ef0  master -> master
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git show :src/main/java/frc/robot/Robot.java
+> git checkout -q -b TCJ-BTD1
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+fatal: no upstream configured for branch 'TCJ-BTD1'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+fatal: no upstream configured for branch 'TCJ-BTD1'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+fatal: no upstream configured for branch 'TCJ-BTD1'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+fatal: no upstream configured for branch 'TCJ-BTD1'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+fatal: no upstream configured for branch 'TCJ-BTD1'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git add -A -- .
+> git commit --quiet --allow-empty-message --file - --all
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+fatal: no upstream configured for branch 'TCJ-BTD1'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+fatal: no upstream configured for branch 'TCJ-BTD1'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git push
+fatal: The current branch TCJ-BTD1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin TCJ-BTD1
+> git push -u origin TCJ-BTD1
+To https://github.com/Pridetronics/P180812A.git
+ * [new branch]      TCJ-BTD1 -> TCJ-BTD1
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+> git rev-list --left-right TCJ-BTD1...refs/remotes/origin/TCJ-BTD1
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+> git rev-list --left-right TCJ-BTD1...refs/remotes/origin/TCJ-BTD1
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse TCJ-BTD1
+> git rev-parse --symbolic-full-name TCJ-BTD1@{u}
+> git rev-list --left-right TCJ-BTD1...refs/remotes/origin/TCJ-BTD1
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :src/main/java/frc/robot/Robot.java
